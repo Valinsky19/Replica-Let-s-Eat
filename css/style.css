@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 232, 232);
+  top: 0;
+  box-shadow: 1px 1px rgb(189, 189, 189);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+}
+header nav span a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  text-decoration: none;
+  padding: 0 30px 0 30px;
+  color: #ac0c89;
+  height: 100%;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  flex-wrap: nowrap;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 300px;
+  width: 100px;
+}
+header nav ul li {
+  height: 100%;
+}
+header nav ul li a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  color: #ac0c89;
+  padding: 0 30px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  height: 70px;
+  width: 115px;
+  align-items: center;
+}
+
+.body {
+  margin-top: 70px;
+}
+
+footer {
+  background-color: #f2f2f3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+footer .footer-container {
+  margin: 0 180px;
+}
+footer .footer-container .contacts-socialize {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-container .contacts-socialize form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 130px;
+  width: 277px;
+}
+footer .footer-container .contacts-socialize form input {
+  width: 212px;
+  height: 45px;
+}
+footer .footer-container .contacts-socialize form button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #cfcece;
+  color: #df096d;
+  font-weight: bolder;
+  font-size: larger;
+}
+footer .footer-container .contacts-socialize form button:hover {
+  color: white;
+  background-color: #df096d;
+}
+footer .footer-container .contacts-socialize .social-media {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 225px;
+  font-weight: bolder;
+}
+footer .footer-container .contacts-socialize .social-media a button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #cfcece;
+  color: #df096d;
+  font-weight: bolder;
+  font-size: larger;
+}
+footer .footer-container .contacts-socialize .social-media a button:hover {
+  color: white;
+  background-color: #df096d;
+}
+footer .footer-container .copyrights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  color: black;
+}
+footer .footer-container .copyrights-support {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  align-items: center;
+}
+footer .footer-container .copyrights-support a {
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+footer .footer-container .copyrights-support a:hover {
+  color: #df096d;
+}/*# sourceMappingURL=style.css.map */
