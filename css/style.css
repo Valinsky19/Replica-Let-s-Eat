@@ -125,7 +125,14 @@ header nav ul li a {
   font-weight: bolder;
 }
 .body .search-section input {
-  margin: 40px 0;
+  margin: 30px 20% 30px 20%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  text-align: center;
+  border: 1px solid;
+  font-size: 16px;
 }
 .body .restaurant-section {
   margin-top: 100px;

@@ -139,11 +139,19 @@ header {
       display: flex;
       justify-content: center;
       font-size: 32px;
+
       font-family: sans-serif;
       font-weight: bolder;
     }
     input {
-      margin: 40px 0;
+      margin: 30px 20% 30px 20%;
+      height: 50px;
+      padding: 10px;
+      border-radius: 10px;
+      border-color: $color_black;
+      text-align: center;
+      border: 1px solid;
+      font-size: 16px;
     }
   }
 
