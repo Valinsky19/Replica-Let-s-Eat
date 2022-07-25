@@ -2,9 +2,15 @@ body {
   margin: 0;
 }
 
+$header_height: 70px;
+$footer_height: 300px;
+
 $color_navbar: rgba(233, 232, 232, 1);
 $color_purple: #ac0c89;
 $color_pink: #df096d;
+$color_footer: #f2f2f3;
+$color_black: black;
+$color_white: white;
 
 header {
   nav {
@@ -14,7 +20,7 @@ header {
     background-color: $color_navbar;
     top: 0;
     box-shadow: 1px 1px rgb(189, 189, 189);
-    height: 70px;
+    height: $header_height;
     position: fixed;
     width: 100%;
     span {
@@ -61,8 +67,122 @@ header {
 }
 
 .body {
-  margin-top: 70px;
-  // min-height: 100vh;
+  margin: $header_height 10% 0 10%;
+  font-family: sans-serif;
+  .hero {
+    display: flex;
+    justify-content: center;
+
+    img {
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+  }
+  .offers-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    .offer-container {
+      background-color: $color_footer;
+      width: 40%;
+      color: $color_black;
+      text-decoration: none;
+      border-radius: 5px;
+      overflow: hidden;
+      .offer-header {
+        background-color: $color_pink;
+        color: $color_white;
+        padding: 10px;
+        h2 {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+      .offer-body {
+        padding: 0 10px;
+      }
+      .offer-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .offer-detail-card {
+          background-color: $color_purple;
+          padding: 5px;
+          color: $color_white;
+          font-weight: bold;
+          margin: 10px 0;
+          border-radius: 5px;
+          p {
+            margin: 0;
+          }
+        }
+        .offer-category {
+          background-color: $color_pink;
+        }
+      }
+    }
+  }
+
+  .search-section {
+    margin: 100px 0;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 32px;
+      font-family: sans-serif;
+      font-weight: bolder;
+    }
+    input {
+      margin: 40px 0;
+    }
+  }
+
+  .restaurant-section {
+    margin-top: 100px;
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bolder;
+    }
+    .restaurant-container-wrapper {
+      margin: 40px 0;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .restaurant-container {
+        width: 330px;
+        margin: 0 5px;
+        a {
+          text-decoration: none;
+
+          img {
+            width: 100%;
+            height: 200px;
+          }
+          h2 {
+            margin: 10px 0;
+            color: $color_black;
+          }
+          p {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
 }
 
 footer {
@@ -73,14 +193,16 @@ footer {
   padding: 20px 80px;
   width: 100%;
   box-sizing: border-box;
+  height: 300px;
+  justify-content: center;
 
   .footer-container {
     margin: 0 180px;
-
     .contacts-socialize {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      box-shadow: 0 1px grey;
 
       form {
         display: flex;
@@ -89,11 +211,11 @@ footer {
         flex-direction: row;
         height: 130px;
         width: 277px;
-
         input {
           width: 212px;
           height: 45px;
         }
+
         button {
           width: 45px;
           height: 45px;
@@ -103,18 +225,18 @@ footer {
           font-weight: bolder;
           font-size: larger;
           &:hover {
-            color: white;
+            color: $color_white;
             background-color: $color_pink;
           }
         }
       }
+
       .social-media {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         height: 50px;
         width: 225px;
-        font-weight: bolder;
 
         a {
           button {
@@ -126,7 +248,7 @@ footer {
             font-weight: bolder;
             font-size: larger;
             &:hover {
-              color: white;
+              color: $color_white;
               background-color: $color_pink;
             }
           }
@@ -138,7 +260,7 @@ footer {
       flex-direction: row;
       justify-content: space-between;
       font-size: 16px;
-      color: black;
+      color: $color_black;
     }
     .copyrights-support {
       display: flex;
