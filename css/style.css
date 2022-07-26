@@ -64,6 +64,7 @@ header nav ul li a {
   width: 100%;
   height: auto;
   justify-content: center;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
 }
 .body .offers-container-wrapper {
   display: flex;
@@ -78,6 +79,13 @@ header nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.body .offers-container-wrapper .offer-container:hover {
+  background-color: #d3d3d3;
+}
+.body .offers-container-wrapper .offer-container:hover h3 {
+  color: black;
 }
 .body .offers-container-wrapper .offer-container .offer-header {
   background-color: #df096d;
@@ -128,22 +136,26 @@ header nav ul li a {
   margin: 30px 20% 30px 20%;
   height: 50px;
   padding: 10px;
-  border-radius: 10px;
-  border-color: black;
+  border-radius: 5px;
   text-align: center;
-  border: 1px solid;
+  border: 1px solid #ccc;
   font-size: 16px;
 }
-.body .restaurant-section {
+.body .search-section input:focus {
+  border: 1px solid grey;
+  outline: none;
+}
+
+.restaurant-section {
   margin-top: 100px;
 }
-.body .restaurant-section h1 {
+.restaurant-section h1 {
   display: flex;
   justify-content: center;
   font-size: 32px;
   font-weight: bolder;
 }
-.body .restaurant-section .restaurant-container-wrapper {
+.restaurant-section .restaurant-container-wrapper {
   margin: 40px 0;
   text-align: center;
   display: flex;
@@ -151,22 +163,29 @@ header nav ul li a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.body .restaurant-section .restaurant-container-wrapper .restaurant-container {
+.restaurant-section .restaurant-container-wrapper .restaurant-container {
   width: 330px;
   margin: 0 5px;
 }
-.body .restaurant-section .restaurant-container-wrapper .restaurant-container a {
+.restaurant-section .restaurant-container-wrapper .restaurant-container img:hover {
+  transform: scale(0.9);
+  border-radius: 10px;
+}
+.restaurant-section .restaurant-container-wrapper .restaurant-container a {
   text-decoration: none;
 }
-.body .restaurant-section .restaurant-container-wrapper .restaurant-container a img {
+.restaurant-section .restaurant-container-wrapper .restaurant-container a img {
+  border-radius: 5px;
   width: 100%;
   height: 200px;
+  transition: all 0.25s ease;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
 }
-.body .restaurant-section .restaurant-container-wrapper .restaurant-container a h2 {
+.restaurant-section .restaurant-container-wrapper .restaurant-container a h2 {
   margin: 10px 0;
   color: black;
 }
-.body .restaurant-section .restaurant-container-wrapper .restaurant-container a p {
+.restaurant-section .restaurant-container-wrapper .restaurant-container a p {
   color: grey;
 }
 
@@ -175,10 +194,8 @@ footer {
   margin: 0;
   display: flex;
   flex-direction: column;
-  padding: 20px 80px;
   width: 100%;
   box-sizing: border-box;
-  height: 300px;
   justify-content: center;
 }
 footer .footer-container {
@@ -189,6 +206,7 @@ footer .footer-container .contacts-socialize {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 1px grey;
+  padding: 20px;
 }
 footer .footer-container .contacts-socialize form {
   display: flex;
@@ -197,6 +215,7 @@ footer .footer-container .contacts-socialize form {
   flex-direction: row;
   height: 130px;
   width: 277px;
+  margin: 0;
 }
 footer .footer-container .contacts-socialize form input {
   width: 212px;
@@ -210,10 +229,12 @@ footer .footer-container .contacts-socialize form button {
   color: #df096d;
   font-weight: bolder;
   font-size: larger;
+  transition: all 0.5s ease;
 }
 footer .footer-container .contacts-socialize form button:hover {
   color: white;
   background-color: #df096d;
+  transform: scale(1.1);
 }
 footer .footer-container .contacts-socialize .social-media {
   display: flex;
@@ -230,10 +251,12 @@ footer .footer-container .contacts-socialize .social-media a button {
   color: #df096d;
   font-weight: bolder;
   font-size: larger;
+  transition: all 0.5s ease;
 }
 footer .footer-container .contacts-socialize .social-media a button:hover {
   color: white;
   background-color: #df096d;
+  transform: scale(1.1);
 }
 footer .footer-container .copyrights {
   display: flex;
@@ -241,6 +264,7 @@ footer .footer-container .copyrights {
   justify-content: space-between;
   font-size: 16px;
   color: black;
+  padding: 10px 50px 20px;
 }
 footer .footer-container .copyrights-support {
   display: flex;
@@ -256,4 +280,10 @@ footer .footer-container .copyrights-support a {
 }
 footer .footer-container .copyrights-support a:hover {
   color: #df096d;
+}
+
+@media (max-width: 600px) {
+  footer {
+    background-color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
